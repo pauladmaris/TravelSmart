@@ -1,0 +1,252 @@
+/* Posts container from EXPLORE and POST pages */
+.mt-5 {
+    margin-top: 1rem;
+}
+
+.container {
+    width: 100%;
+    margin-top: 1rem;  
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 18px;
+}
+
+.text-center h2 {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+.text-center h2 span {
+    font-weight: 800;
+}
+
+.text-center p{
+    max-width: 500px;
+    margin: 0 auto;
+    color: #6c757d;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.col#one {
+    width:50%;
+}
+
+.col {
+    width: 33.3333333%;
+    overflow: hidden;
+    padding: 15px;
+    
+}
+
+.col-location {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 50px 50px 0 0;
+}
+
+.col .card, .col-location .card{
+    border-radius: 50px;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.col img {
+    border-radius: 50px 50px 0 0;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+@media(max-width: 767px) {
+    .col, .col#one{
+        width: 100%;
+    }
+
+    .col img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1184px) {
+    .col, .col#one{
+        width: 50%;
+    }
+
+    .col img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.col .card-body, .col-location .card-body {
+    padding: 0 15px 15px 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-body h5 {
+    font-size: 24px;
+    margin: 7px 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.card p {
+    color: #6c757d;
+}
+
+p.card-title {
+    font-size: 1.5rem;
+}
+
+.card-body .date-author span {
+    color: #e74c3c;
+}
+
+.card-body .date-author span#foodTag {
+    font-style: italic;
+    color:green;
+}
+
+.card-body .date-author span#hotelTag {
+    font-style: italic;
+    color:red;
+}
+
+.card-body .date-author span#transportTag {
+    font-style: italic;
+    color:blue;
+}
+
+.card-body .date-author span#attractionTag {
+    font-style: italic;
+    color:violet;
+}
+
+.card-body .date-author span.person_type {
+    display: flex;
+    float: right;
+}
+
+.card-body .date-author span.person_type img.traveler {
+    margin:0;
+    width:30px;
+    height:37px;
+}
+
+.card-body .date-author span.person_type img.local {
+    margin:0;
+    width:40px;
+    height:45px;
+}
+
+
+div.ex1 {
+    overflow: auto;
+}
+
+textarea {
+    resize:none;
+}
+
+.card-body h5 a {
+    color: #222;
+}
+
+/* overlay for favourite/edit&delete buttons*/
+.main-box{
+    position:relative;  	
+}
+
+.main-box img{
+    position:relative;
+    z-index:1;
+    display:block; 
+}
+
+button#edit, button#delete { 
+    width:35%;
+    height: auto;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button#deleteFav{ 
+    width:80px;
+    height: 80px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.616);
+    border-radius: 100px;
+    border:none;
+    cursor: pointer;
+}
+
+button img.notFavImg {
+    width: 80px;
+    height: 80px;
+}
+
+.main-box button#fav {
+  color:rgba(255, 0, 0, 0);
+  margin-top: 10px;
+  
+}
+
+.overlay{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  opacity: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  background-color: #093646;
+  border-radius: 50px 50px 0 0;
+}
+
+.main-box:hover .overlay{
+  opacity:0.6;
+}
+
+button#updateBtn {
+    margin: 20px 0; 
+    display: block; 
+    padding: .7rem 2rem; 
+    color: #FFF; 
+    background: #0084b8; 
+    border:none; 
+    outline:none; 
+    border-radius:3px; 
+    cursor: pointer; 
+    font-size:1rem;
+}
+
+div.row div.input-group input {
+    width:100%; 
+    font-family:cursive;
+}
+
+

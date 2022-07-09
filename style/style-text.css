@@ -1,0 +1,21 @@
+h3 {
+    color:rgba(61, 49, 49, 0.884);
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.3rem;
+    text-align: left;
+    display:block;
+    margin: auto;
+  }
+
+a.a-h2 {
+  font-size: 17px;
+  font-family: cursive;
+}
+
+a:link {
+  color:teal;
+}
+
+a:hover {
+  color:red;
+}

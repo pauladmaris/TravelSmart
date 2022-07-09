@@ -1,0 +1,73 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+  *:focus {
+    outline: 0;
+  }
+
+  div.scroll-section {
+    height: auto;
+    position: relative;
+    width: 100%;
+    padding: 60px;
+  }
+
+  #p1, #p2 {
+    color:white;
+    font-size: 1.1rem;
+    font-family: cursive;
+  }
+
+  .ctn-title {
+    -webkit-background-clip: text;
+    background-clip: initial;
+    background: black;
+    opacity: 0.4;
+    border-radius: 10px;
+    font: bold 1.5em 'Lobster', sans-serif;
+    left: 50%;
+    letter-spacing: 5px;
+    position: absolute;
+    width: 200px;
+    flex-wrap: wrap;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ctn-icon {
+    animation: jump-arrow 2.5s infinite;
+    color: #ffffff;
+    font-size: 2.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: absolute;
+    text-align: center;
+    transform: translatex(-50%);
+    width: 1.5em;  
+    top: -10px;
+  }
+  
+  .ctn-icon:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  @keyframes jump-arrow {
+    0%,
+    20%,
+    55%,
+    80%,
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  
+    40% {
+      transform: translate3d(-50%, -15px, 0);
+    }
+  
+    70% {
+      transform: translate3d(-50%, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(-50%, -5px, 0);
+    }
+  }

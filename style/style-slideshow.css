@@ -1,0 +1,207 @@
+.slideshow, .slideshowLog {
+	display: inline-block;
+	margin: 10px;
+}
+/* Slideshow container */
+.slideshow-container, .slideshow-containerLog {
+    position: relative;
+    width:290px;
+    height:100px;
+    margin:auto;
+    background: #f1f1f181;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 380px) {
+    .slideshow-container, .slideshowLog {
+      position: relative;
+      width:80%;
+      height:auto;
+      min-height: 50px;
+      margin:auto;
+      background: #f1f1f181;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 260px) {
+    .slideshow, .slideshowLog {
+      margin-left: -5px;
+    }
+    .slideshow-container, .slideshow-containerLog {
+      width: 50%;
+      padding: 1px;
+    }
+  }
+  
+  /* Slides */
+  .mySlides, .mySlidesLog {
+    display: none;
+    text-align: left;
+    font-family: cursive;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next, .prevLog, .nextLog {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -30px;
+    padding: 6px;
+    color: #888;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev#prevWhite, .next#nextWhite {
+    color:white;
+  }
+
+  .prev#prevWhite:hover, .next#nextWhite:hover, .dot#dotWhite, .dot#dotWhite:hover {
+    background-color: white;
+    cursor: auto;
+  }
+
+  
+  /* Position the "next button" to the right */
+  .next, .nextLog {
+    position: absolute;
+    right: -30px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev, .prevLog {
+    position: absolute;
+    left: -30px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover, .prevLog:hover, .nextLog:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 1px;
+    background: transparent;
+    position:relative;
+    margin:auto;
+    margin-bottom: 10px;
+    width:200px;
+    height:10px;
+      
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+/* Slideshow container for myPosts/FavPosts */
+.slideshow-container3 {
+    position: relative;
+    background: #f1f1f128;
+    width: 100%;
+    height: auto;
+    margin:auto;
+  }
+  
+  /* Slides */
+  .mySlides3 {
+    display: none;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev3, .next3 {
+    cursor: pointer;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: rgba(39, 33, 33, 0.575);
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 13px;
+    user-select: none;
+    display: inline;
+  }
+
+  span.between {
+    margin-top: -30px;
+    padding: 6px;
+    color: #888;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: cursive;
+    border-radius: 0 3px 3px 0;
+  }
+
+  @media (max-width : 400px) {
+    span.between, .prev3, .next3 {
+        font-size: 15px;
+    }
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev3:hover, .next3:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+  .prev3.active, .next3.active {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container3 {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot3 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle 
+  .active {
+    background-color:#717171;
+  } */
+  .dot3:hover {
+    background-color: transparent;
+  }
+  
