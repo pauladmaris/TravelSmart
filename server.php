@@ -51,7 +51,7 @@
         if($user) {
             if($user['username'] === $username) {array_push($errors,"Username already exists");}
             if($user['email'] === $email) {array_push($errors,"This email has a registered username");}
-        } 
+        } else {
             
         //Register the user if no error
         // if(count($errors) == 0) {
@@ -98,7 +98,7 @@
         $_SESSION['unique_id'] = $ran_id;
         $_SESSION['username'] = $user['username'];
         $_SESSION['success'] = "You are now registered!";
-        header("location: log.php");
+        header("location: log.php"); }
 
         //if user is an admin, send him instructions for log in and other
         /* if($user_type === "1") {
