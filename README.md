@@ -1,5 +1,7 @@
 # TravelSmart
+
 http://travelsmart.host/
+
 PHP Web Application using Ajax for real time chat
 
 TravelSmart is the new social media platform for all the travelers interested in finding honest reviews. As a bonus, if something isn't clear from the post, users can chat with each other.
